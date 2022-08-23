@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PryanikyTestApp: App {
+    
+    @StateObject var pryanikyVM = PryanikyVM()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(pryanikyVM)
         }
     }
 }
