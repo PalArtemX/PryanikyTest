@@ -53,6 +53,9 @@
 			children = (
 				F8572C0828B5378A005FD2FB /* PryanikyTestApp.swift */,
 				F8572C0A28B5378A005FD2FB /* ContentView.swift */,
+				F8572C1628B53796005FD2FB /* Views */,
+				F8572C1728B5379E005FD2FB /* ViewModels */,
+				F8572C1828B537A6005FD2FB /* Models */,
 				F8572C0C28B5378C005FD2FB /* Assets.xcassets */,
 				F8572C0E28B5378C005FD2FB /* Preview Content */,
 			);
@@ -65,6 +68,27 @@
 				F8572C0F28B5378C005FD2FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8572C1628B53796005FD2FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8572C1728B5379E005FD2FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8572C1828B537A6005FD2FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
