@@ -17,11 +17,11 @@ struct MainView: View {
                 ForEach(pryanikyVM.orderViews, id: \.self) { orderView in
                     switch orderView {
                     case .hz:
-                        Text("HZ")
+                        HZView()
                     case .picture:
-                        Text("PICTURE")
+                        PictureView()
                     case .selector:
-                        Text("SELECTOR")
+                        SelectorView()
                     }
                 }
             }
