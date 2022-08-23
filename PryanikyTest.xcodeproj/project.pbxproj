@@ -11,6 +11,7 @@
 		F8572C0B28B5378A005FD2FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572C0A28B5378A005FD2FB /* ContentView.swift */; };
 		F8572C0D28B5378C005FD2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8572C0C28B5378C005FD2FB /* Assets.xcassets */; };
 		F8572C1028B5378C005FD2FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8572C0F28B5378C005FD2FB /* Preview Assets.xcassets */; };
+		F8572C1A28B538DC005FD2FB /* Pryaniky.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572C1928B538DC005FD2FB /* Pryaniky.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F8572C0A28B5378A005FD2FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8572C0C28B5378C005FD2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8572C0F28B5378C005FD2FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8572C1928B538DC005FD2FB /* Pryaniky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pryaniky.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		F8572C1828B537A6005FD2FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8572C1928B538DC005FD2FB /* Pryaniky.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8572C1A28B538DC005FD2FB /* Pryaniky.swift in Sources */,
 				F8572C0B28B5378A005FD2FB /* ContentView.swift in Sources */,
 				F8572C0928B5378A005FD2FB /* PryanikyTestApp.swift in Sources */,
 			);
