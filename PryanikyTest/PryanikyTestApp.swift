@@ -14,7 +14,7 @@ struct PryanikyTestApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environmentObject(pryanikyVM)
         }
     }

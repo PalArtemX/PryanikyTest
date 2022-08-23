@@ -10,7 +10,13 @@ import Foundation
 struct Pryaniky: Codable {
     
     let data: [DataResult]
-    let view: [String]
+    let view: [OrderView]
+    
+    enum OrderView: String, Codable {
+        case hz
+        case selector
+        case picture
+    }
     
     struct DataResult: Codable {
         let name: String

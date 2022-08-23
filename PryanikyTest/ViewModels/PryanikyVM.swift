@@ -12,7 +12,7 @@ import Combine
 class PryanikyVM: ObservableObject {
         
     @Published private(set) var data: [Pryaniky.DataResult] = []
-    @Published private(set) var view: [String] = []
+    @Published private(set) var orderViews: [Pryaniky.OrderView] = []
     
     var cancellable = Set<AnyCancellable>()
     
@@ -26,7 +26,7 @@ class PryanikyVM: ObservableObject {
         guard let url = URL(string: "https://pryaniky.com/static/json/sample.json") else { return }
         
         URLSession.shared.dataTaskPublisher(for: url)
-            .tryMap { output -> Data in
+            .tryMap { output in
                 guard
                     let response = output.response as? HTTPURLResponse,
                     response.statusCode >= 200 && response.statusCode < 300 else {
@@ -46,7 +46,7 @@ class PryanikyVM: ObservableObject {
                 }
             } receiveValue: { [weak self] returnedData in
                 self?.data = returnedData.data
-                self?.view = returnedData.view
+                self?.orderViews = returnedData.view
             }
             .store(in: &cancellable)
 
