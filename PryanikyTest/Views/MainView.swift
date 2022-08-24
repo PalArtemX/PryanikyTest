@@ -15,13 +15,15 @@ struct MainView: View {
         VStack {
             ScrollView {
                 ForEach(pryanikyVM.orderViews, id: \.self) { orderView in
-                    switch orderView {
-                    case .hz:
-                        HZView()
-                    case .picture:
-                        PictureView()
-                    case .selector:
-                        SelectorView()
+                    ForEach(pryanikyVM.data, id: \.name) { data in
+                        switch orderView {
+                        case .picture:
+                            PictureView(data: data)
+                        case .selector:
+                            SelectorView(data: data)
+                        case .hz:
+                            HZView(data: data)
+                        }
                     }
                 }
             }
