@@ -18,6 +18,7 @@
 		F8572C2228B56D52005FD2FB /* HZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572C2128B56D52005FD2FB /* HZView.swift */; };
 		F8572C2428B56D74005FD2FB /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572C2328B56D74005FD2FB /* PictureView.swift */; };
 		F8572C2628B56D9C005FD2FB /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572C2528B56D9C005FD2FB /* SelectorView.swift */; };
+		F8AEE23C28B671BB00939B0B /* PlaceholderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AEE23B28B671BB00939B0B /* PlaceholderImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F8572C2128B56D52005FD2FB /* HZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZView.swift; sourceTree = "<group>"; };
 		F8572C2328B56D74005FD2FB /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		F8572C2528B56D9C005FD2FB /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
+		F8AEE23B28B671BB00939B0B /* PlaceholderImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F84E850328B63749009FDB8C /* TextBlockView.swift */,
+				F8AEE23B28B671BB00939B0B /* PlaceholderImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				F84E850628B6398B009FDB8C /* PreviewData.swift in Sources */,
 				F8572C2428B56D74005FD2FB /* PictureView.swift in Sources */,
 				F8572C2028B564C0005FD2FB /* MainView.swift in Sources */,
+				F8AEE23C28B671BB00939B0B /* PlaceholderImageView.swift in Sources */,
 				F8572C0928B5378A005FD2FB /* PryanikyTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

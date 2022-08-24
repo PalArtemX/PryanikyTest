@@ -15,22 +15,19 @@ struct PictureView: View {
     var body: some View {
         if data.name == picture {
             VStack {
-                TextBlockView(text: data.data.text!)
-                
+                TextBlockView(text: data.data.text ?? "")
+                    .padding(.top)
                 AsyncImage(url: URL(string: data.data.url ?? "")) { image in
                     image
                         .resizable()
                         .scaledToFit()
                 } placeholder: {
-                    Image(systemName: "photo.on.rectangle.angled")
-                        .symbolRenderingMode(.hierarchical)
-                        .font(.largeTitle)
-                        .foregroundColor(.green)
+                    PlaceholderImageView()
                 }
                 .padding()
             }
             .background(.ultraThinMaterial)
-            .cornerRadius(20)
+            .cornerRadius(15)
             .padding()
         }
     }

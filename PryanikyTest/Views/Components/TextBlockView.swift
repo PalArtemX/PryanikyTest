@@ -18,7 +18,7 @@ struct TextBlockView: View {
             .foregroundColor(.primary)
             .background(.ultraThinMaterial)
             .cornerRadius(15)
-            .padding()
+            .padding(.horizontal)
     }
 }
 

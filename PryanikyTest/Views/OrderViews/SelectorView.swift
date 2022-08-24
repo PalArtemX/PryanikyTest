@@ -16,17 +16,20 @@ struct SelectorView: View {
     var body: some View {
         if data.name == selector, let variants = data.data.variants {
             VStack {
+                TextBlockView(text: "id: \(pryanikyVM.variant)")
+                    .padding(.top)
                 Picker(selection: $pryanikyVM.variant) {
+                    
                     ForEach(variants, id: \.id) { variant in
-                        HStack {
-                            Text("\(variant.text) id: \(variant.id)")
-                        }
+                        Text("\(variant.text) id:\(variant.id)")
+                            .tag(variant.id)
                     }
+                    
                 } label: {
                     Label("Variants", systemImage: "filemenu.and.selection")
                 }
                 .pickerStyle(.segmented)
-                .padding()
+                .padding(.horizontal)
             }
         }
     }
