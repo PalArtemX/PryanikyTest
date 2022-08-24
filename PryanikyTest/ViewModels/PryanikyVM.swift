@@ -35,8 +35,8 @@ class PryanikyVM: ObservableObject {
                 return output.data
             }
             .decode(type: Pryaniky.self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
+            .receive(on: DispatchQueue.main)
             .sink { completion in
                 switch completion {
                 case .finished:
@@ -49,7 +49,6 @@ class PryanikyVM: ObservableObject {
                 self?.orderViews = returnedData.view
             }
             .store(in: &cancellable)
-
     }
 }
 

@@ -13,8 +13,8 @@ struct HZView: View {
     let hz = Pryaniky.OrderView.hz.rawValue
     
     var body: some View {
-        if data.name == hz {
-            Text("hz")
+        if data.name == hz, let text = data.data.text {
+            TextBlockView(text: text)
         } else {
             EmptyView()
         }
@@ -35,9 +35,7 @@ struct HZView: View {
 
 
 struct HZView_Previews: PreviewProvider {
-    typealias Variant = Pryaniky.DataResult.Object.Variant
-    
     static var previews: some View {
-        HZView(data: Pryaniky.DataResult(name: "hz", data: Pryaniky.DataResult.Object(text: "Text", url: "url", selectedID: 1, variants: [Variant(id: 1, text: "textV")])))
+        HZView(data: PreviewData.data(name: "hz"))
     }
 }

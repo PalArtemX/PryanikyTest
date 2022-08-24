@@ -29,8 +29,8 @@ struct SelectorView: View {
 
 
 
-//struct SelectorView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SelectorView()
-//    }
-//}
+struct SelectorView_Previews: PreviewProvider {
+    static var previews: some View {
+        SelectorView(data: PreviewData.data(name: "selector"))
+    }
+}

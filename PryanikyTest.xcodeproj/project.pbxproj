@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84E850428B63749009FDB8C /* TextBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E850328B63749009FDB8C /* TextBlockView.swift */; };
+		F84E850628B6398B009FDB8C /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E850528B6398B009FDB8C /* PreviewData.swift */; };
 		F8572C0928B5378A005FD2FB /* PryanikyTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572C0828B5378A005FD2FB /* PryanikyTestApp.swift */; };
 		F8572C0D28B5378C005FD2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8572C0C28B5378C005FD2FB /* Assets.xcassets */; };
 		F8572C1028B5378C005FD2FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8572C0F28B5378C005FD2FB /* Preview Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F84E850328B63749009FDB8C /* TextBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBlockView.swift; sourceTree = "<group>"; };
+		F84E850528B6398B009FDB8C /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		F8572C0528B5378A005FD2FB /* PryanikyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8572C0828B5378A005FD2FB /* PryanikyTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikyTestApp.swift; sourceTree = "<group>"; };
 		F8572C0C28B5378C005FD2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +54,14 @@
 				F8572C2528B56D9C005FD2FB /* SelectorView.swift */,
 			);
 			path = OrderViews;
+			sourceTree = "<group>";
+		};
+		F84E850228B63707009FDB8C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F84E850328B63749009FDB8C /* TextBlockView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F8572BFC28B5378A005FD2FB = {
@@ -85,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F8572C0F28B5378C005FD2FB /* Preview Assets.xcassets */,
+				F84E850528B6398B009FDB8C /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -94,6 +107,7 @@
 			children = (
 				F8572C1F28B564C0005FD2FB /* MainView.swift */,
 				F84E850128B63332009FDB8C /* OrderViews */,
+				F84E850228B63707009FDB8C /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,9 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8572C1A28B538DC005FD2FB /* Pryaniky.swift in Sources */,
+				F84E850428B63749009FDB8C /* TextBlockView.swift in Sources */,
 				F8572C2628B56D9C005FD2FB /* SelectorView.swift in Sources */,
 				F8572C2228B56D52005FD2FB /* HZView.swift in Sources */,
 				F8572C1E28B55FE5005FD2FB /* PryanikyVM.swift in Sources */,
+				F84E850628B6398B009FDB8C /* PreviewData.swift in Sources */,
 				F8572C2428B56D74005FD2FB /* PictureView.swift in Sources */,
 				F8572C2028B564C0005FD2FB /* MainView.swift in Sources */,
 				F8572C0928B5378A005FD2FB /* PryanikyTestApp.swift in Sources */,
