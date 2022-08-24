@@ -17,10 +17,13 @@ import Foundation
 /// - Warning: Used only for previews
 ///
 struct PreviewData {
+    
     typealias Variant = Pryaniky.DataResult.Object.Variant
     typealias Object = Pryaniky.DataResult.Object
     
+    
     static func data(name: String) -> Pryaniky.DataResult {
+        
         return Pryaniky.DataResult(name: name,
                                    data: Object(text: "Text",
                                                 url: "https://pryaniky.com/static/img/logo-a-512.png",

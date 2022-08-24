@@ -14,12 +14,12 @@ class PryanikyVM: ObservableObject {
     @Published private(set) var data: [Pryaniky.DataResult] = []
     @Published private(set) var orderViews: [Pryaniky.OrderView] = []
     @Published var variant = 0
-    
     var cancellable = Set<AnyCancellable>()
     
     init() {
         getData()
     }
+    
     
     // MARK: - Functions
     

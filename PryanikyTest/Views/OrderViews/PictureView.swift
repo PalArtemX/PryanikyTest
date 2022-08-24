@@ -11,6 +11,7 @@ struct PictureView: View {
     
     let data: Pryaniky.DataResult
     let picture = Pryaniky.OrderView.picture.rawValue
+    @State private var isAlert = false
     
     var body: some View {
         if data.name == picture {
@@ -25,6 +26,14 @@ struct PictureView: View {
                     PlaceholderImageView()
                 }
                 .padding()
+            }
+            .onTapGesture {
+                isAlert.toggle()
+            }
+            .alert(picture, isPresented: $isAlert) {
+                
+            } message: {
+                Text(data.data.text ?? "")
             }
             .background(.ultraThinMaterial)
             .cornerRadius(15)
@@ -45,6 +54,5 @@ struct PictureView: View {
 struct PictureView_Previews: PreviewProvider {
     static var previews: some View {
         PictureView(data: PreviewData.data(name: "picture"))
-            .environmentObject(PryanikyVM())
     }
 }
