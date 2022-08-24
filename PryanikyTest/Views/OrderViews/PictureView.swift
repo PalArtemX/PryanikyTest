@@ -14,16 +14,24 @@ struct PictureView: View {
     
     var body: some View {
         if data.name == picture {
-            AsyncImage(url: URL(string: data.data.url ?? "")) { image in
-                image
-                    .resizable()
-                    .scaledToFit()
-            } placeholder: {
-                Image(systemName: "photo.on.rectangle.angled")
-                    .symbolRenderingMode(.hierarchical)
-                    .font(.largeTitle)
-                    .foregroundColor(.green)
+            VStack {
+                TextBlockView(text: data.data.text!)
+                
+                AsyncImage(url: URL(string: data.data.url ?? "")) { image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                } placeholder: {
+                    Image(systemName: "photo.on.rectangle.angled")
+                        .symbolRenderingMode(.hierarchical)
+                        .font(.largeTitle)
+                        .foregroundColor(.green)
+                }
+                .padding()
             }
+            .background(.ultraThinMaterial)
+            .cornerRadius(20)
+            .padding()
         }
     }
 }
@@ -40,5 +48,6 @@ struct PictureView: View {
 struct PictureView_Previews: PreviewProvider {
     static var previews: some View {
         PictureView(data: PreviewData.data(name: "picture"))
+            .environmentObject(PryanikyVM())
     }
 }

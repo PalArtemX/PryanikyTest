@@ -14,10 +14,10 @@ struct TextBlockView: View {
         Text(text)
             .frame(maxWidth: .infinity)
             .padding(.vertical)
-            .background(Color.mint)
             .font(.headline)
-            .cornerRadius(20)
-            .foregroundColor(.white)
+            .foregroundColor(.primary)
+            .background(.ultraThinMaterial)
+            .cornerRadius(15)
             .padding()
     }
 }

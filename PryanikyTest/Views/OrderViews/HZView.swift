@@ -15,12 +15,8 @@ struct HZView: View {
     var body: some View {
         if data.name == hz, let text = data.data.text {
             TextBlockView(text: text)
-        } else {
-            EmptyView()
-        }
-        
+        } 
     }
-    
 }
 
 
@@ -37,5 +33,6 @@ struct HZView: View {
 struct HZView_Previews: PreviewProvider {
     static var previews: some View {
         HZView(data: PreviewData.data(name: "hz"))
+            .environmentObject(PryanikyVM())
     }
 }
